@@ -91,15 +91,6 @@ export interface INewsItem2 {
 
 }
 
-export interface INewsItem3 {
-
-  temp: {
-    day: number;
-  };
-  
-
-}
-
 
 export interface Weather {
 
@@ -109,6 +100,46 @@ export interface Weather {
   icon: string;
 }
 
-export interface WeatherData {
-
+export interface IPastWeather{
+  dt: number;
+  sunrise: number;
+  sunset: number;
+  temp: number;
+  feels_like: number;
+  pressure: number;
+  humidity: number;
+  dew_point: number;
+  clouds: number;
+  visibility: number;
+  wind_speed: number;
+  wind_deg: number;
+  weather: [{
+    id: number;
+    main: string;
+    description: string;
+    icon: string;
+  }]
 }
+
+export interface IPast{
+  date:[{ dt: number;
+    sunrise: number;
+    sunset: number;
+    temp: number;
+    feels_like: number;
+    pressure: number;
+    humidity: number;
+    dew_point: number;
+    clouds: number;
+    visibility: number;
+    wind_speed: number;
+    wind_deg: number;
+    weather: [{
+      id: number;
+      main: string;
+      description: string;
+      icon: string;
+    }]
+   }]
+}
+

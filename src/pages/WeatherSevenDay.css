@@ -1,0 +1,72 @@
+.weather_seven_day{
+
+    /* max-width: 660px;
+    max-height: 524px;
+    min-width: 300px;
+    min-height: 524px; */
+    min-width: 660px;
+    min-height: 524px;
+    /* margin-left: 45px; */
+    display: flex;
+    flex-direction: column;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25), 14px 14px 20px rgba(5, 6, 114, 0.2);
+    border-radius: 8px;
+}
+/* @media (min-width: 1280px) {
+    .weather_seven_day {
+      width: 100%;
+    }
+  } */
+.title{
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 32px;
+margin-top: 50px;
+margin-left: 58px;
+
+
+
+color: #2C2D76;
+}
+
+.weather_seven-day_select {
+    min-width: 252px;
+    max-width: 252px;
+    min-height: 48px;
+    margin-left: 58px;
+    margin-top: 32px;
+    background: rgba(128, 131, 164, 0.06);
+
+border: 2px solid rgba(128, 131, 164, 0.2);
+box-sizing: border-box;
+border-radius: 8px;
+}
+.weather_seven-day_select :active{
+background: rgba(128, 131, 164, 0.06);
+
+border: 2px solid #373AF5;
+box-sizing: border-box;
+border-radius: 8px;
+}
+.weather_seven-day_select :hover{
+
+background: rgba(128, 131, 164, 0.06);
+
+border: 2px solid #8083A4;
+box-sizing: border-box;
+border-radius: 8px;
+}
+.weather_seven-day_select option{
+    position: absolute;
+width: 230px;
+height: 36px;
+
+background: rgba(128, 131, 164, 0.06);
+border-radius: 8px;
+}
+
+
