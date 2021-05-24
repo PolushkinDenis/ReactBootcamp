@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ReactBootcamp/static/css/main.5c0404f9.chunk.css",
+    "main.js": "/ReactBootcamp/static/js/main.c69e3a9f.chunk.js",
+    "main.js.map": "/ReactBootcamp/static/js/main.c69e3a9f.chunk.js.map",
+    "runtime-main.js": "/ReactBootcamp/static/js/runtime-main.0769da83.js",
+    "runtime-main.js.map": "/ReactBootcamp/static/js/runtime-main.0769da83.js.map",
+    "static/js/2.5147cc91.chunk.js": "/ReactBootcamp/static/js/2.5147cc91.chunk.js",
+    "static/js/2.5147cc91.chunk.js.map": "/ReactBootcamp/static/js/2.5147cc91.chunk.js.map",
+    "static/js/3.dc1d9643.chunk.js": "/ReactBootcamp/static/js/3.dc1d9643.chunk.js",
+    "static/js/3.dc1d9643.chunk.js.map": "/ReactBootcamp/static/js/3.dc1d9643.chunk.js.map",
+    "index.html": "/ReactBootcamp/index.html",
+    "static/css/main.5c0404f9.chunk.css.map": "/ReactBootcamp/static/css/main.5c0404f9.chunk.css.map",
+    "static/js/2.5147cc91.chunk.js.LICENSE.txt": "/ReactBootcamp/static/js/2.5147cc91.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ReactBootcamp/static/media/Ubuntu-Bold.dcbada85.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0769da83.js",
+    "static/js/2.5147cc91.chunk.js",
+    "static/css/main.5c0404f9.chunk.css",
+    "static/js/main.c69e3a9f.chunk.js"
+  ]
+}
