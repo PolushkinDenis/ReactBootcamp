@@ -11,7 +11,6 @@ const WeatherInPast: React.FC = () => {
 
   const [news, setNews] = React.useState([])
   const [coord, setValue] = React.useState([])
-  const [array, setArray] = React.useState([])
   const [dt, setDt] = React.useState(String)
   const [temp, setTemp] = React.useState(String)
   const [icon, setIcon] = React.useState([])
@@ -22,12 +21,7 @@ const WeatherInPast: React.FC = () => {
   const [lon, setLon] = React.useState(Number)
 
   const [isAllOk, setIsAllOk] = React.useState(false)
-  // const [changeDate, setChangeDate] = React.useState(1621382400)
-
-  // const [lat, setLat] = React.useState(53.195873)
-  // const [lon, setLon] = React.useState(50.100193)
-
-
+ 
   async function fetchUserToResult() {
     if (changeDate != 0 && lat != 0 && lon != 0) {
       const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${lat}&lon=${lon}&dt=${changeDate}&appid=${API_KEY}`);
@@ -64,58 +58,17 @@ const WeatherInPast: React.FC = () => {
     return (yyyy + '-' + mm + '-' + dd).toString();
   }
 
-
   const getCoordinate = (event: any) => {
     var price = event.split(',');
     setLat(price[0])
     setLon(price[1])
   }
 
-
-
-
-  // const cityHandler = (event: any) => {
-  //   var price = event.split(',');
-  //   var lat = price[0]
-  //   var lon = price[1]
-  //   fetchUserToResult();
-  //   async function fetchUserToResult() {
-  //     const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,alerts,hourly&appid=${API_KEY}&units={metric}`);
-  //     // const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${lat}&lon=${lon}&dt=${time}&appid=${API_KEY}`);
-  //     const json = await response.json();
-  //     setNews(json.daily)
-  //   }
-  // }
-
   const dateChanged = (event: any) => {
     const selectedDate = new Date(event.target.value).getTime();
     const daten = Math.round(selectedDate / 1000.0)
     setChangeDate(daten)
-    // fetchUserToResult2()
   }
-
-
-  // React.useEffect(() => {
-  //   async function fetchUserToResult2() {
-  //     if (changeDate != 0 && lat != 0 && lon != 0) {
-
-  //       const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${lat}&lon=${lon}&dt=${changeDate}&appid=${API_KEY}`);
-  //       const json = await response.json();
-
-  //       console.log('22222')
-
-  //       setNews(json.current)
-  //       setDt(json.current.dt)
-  //       setTemp(json.current.temp)
-  //       setIcon(json.current.weather[0].icon)
-  //       setIsAllOk(true)
-  //     }
-  //     else {
-  //       return
-  //     }
-  //   }
-  //   fetchUserToResult2()
-  // }, [])
 
   return (
     <div className="weather_in_past">
@@ -135,19 +88,13 @@ const WeatherInPast: React.FC = () => {
           <input className="input-date" type="date"
             min="2021-05-01"
             max={getDateString()}
-            // onBlur={fetchUserToResult}
             onChange={dateChanged}
           >
           </input>
         </div>
       </div>
       <div>
-
-        {console.log("=================")}
-        {console.log(news)}
         {isAllOk ? <PastWeather dt={dt} temp={temp} icon={icon} /> : <EmptyWeather/>}
-        {/* {<PastWeather  dt= {dt} temp ={temp} icon = {icon}/>} */}
-
       </div>
     </div>
   )

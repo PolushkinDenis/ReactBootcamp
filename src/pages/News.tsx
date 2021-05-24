@@ -7,21 +7,10 @@ import { EmptyWeather } from '../components/EmptyWeather'
 
 const API_KEY = "833d126842633355dcaa4c641a86c646"
 
-
 const News: React.FC = () => {
   const [news, setNews] = React.useState([])
   const [coord, setValue] = React.useState([])
   const [isAllData, setIsAllData] = React.useState(false)
-  // React.useEffect(() => {
-  //   async function fetchUserToResult() {
-  //     const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,alerts,hourly&appid=${API_KEY}&units={metric}`);
-  //     const json = await response.json();
-  //     setNews(json.daily)
-  //     console.log(json)
-  //   }
-
-  // }, [])
-
 
   const cityHandler = (event: any) => {
     var price = event.split(',');
@@ -57,29 +46,3 @@ const News: React.FC = () => {
 }
 
 export { News }
-
-// const News: React.FC = () => {
-//   const [news, setNews] = React.useState<INewsItem[]>([])
-
-//   React.useEffect(() => {
-//     getNews()
-//       .then(res => {
-//         setNews(res.data)
-//       })
-//       .catch(err => {
-//         // tslint:disable-next-line: no-console
-//         console.warn('Getting news problem', err)
-//       })
-//   }, [])
-
-//   return (
-//     <div className="news">
-//       {console.log(news)}
-//       {news.map(item => (
-//         <NewsItem data={item} key={item.id} />
-//       ))}
-//     </div>
-//   )
-// }
-
-// export { News }

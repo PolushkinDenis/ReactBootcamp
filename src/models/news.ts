@@ -1,10 +1,3 @@
-// export interface INewsItem {
-//     id: number;
-//     title: string;
-//     text: string;
-//     link: string;
-//     timestamp: Date;
-//   }
 
 export interface INewsItem {
 
@@ -91,55 +84,4 @@ export interface INewsItem2 {
 
 }
 
-
-export interface Weather {
-
-  id: number;
-  main: string;
-  description: string;
-  icon: string;
-}
-
-export interface IPastWeather{
-  dt: number;
-  sunrise: number;
-  sunset: number;
-  temp: number;
-  feels_like: number;
-  pressure: number;
-  humidity: number;
-  dew_point: number;
-  clouds: number;
-  visibility: number;
-  wind_speed: number;
-  wind_deg: number;
-  weather: [{
-    id: number;
-    main: string;
-    description: string;
-    icon: string;
-  }]
-}
-
-export interface IPast{
-  date:[{ dt: number;
-    sunrise: number;
-    sunset: number;
-    temp: number;
-    feels_like: number;
-    pressure: number;
-    humidity: number;
-    dew_point: number;
-    clouds: number;
-    visibility: number;
-    wind_speed: number;
-    wind_deg: number;
-    weather: [{
-      id: number;
-      main: string;
-      description: string;
-      icon: string;
-    }]
-   }]
-}
 
