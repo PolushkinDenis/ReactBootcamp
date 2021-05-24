@@ -1,15 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    /* padding: 0;
-    margin: 0;
-    background: #373AF5;
-    background-image: url(./images/Academy-Weather\ forecast-Bg-buttom.png),
-     url(./images/Academy-Weather\ forecast-Bg-up-1.png);
-     background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0% 100%, 100% 0%; */
-    /* background-image: url(./images/Academy-Weather\ forecast-Bg-up-1.png); */
 }
 
 
@@ -39,7 +30,7 @@
 font-style: normal;
 font-weight: bold;
     color: #FFFFFF;
-    font-size: calc(min(100px, calc(max(8vw, 32px))))
+    font-size: 102px;
 }
 
 .app_footer{
